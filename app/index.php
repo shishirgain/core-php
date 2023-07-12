@@ -1,3 +1,3 @@
 <?php
 include_once __DIR__.'/../vendor/autoload.php';
-include_once __DIR__.'/layouts/default.php';
+include_once __DIR__.'/../layouts/default.php';
