@@ -1,0 +1,15 @@
+{
+    "name": "shishir/php",
+    "autoload": {
+        "psr-4": {
+            "": "src"
+        }
+    },
+    "authors": [
+        {
+            "name": "Shishir",
+            "email": "shishir@gain.media"
+        }
+    ],
+    "require": {}
+}
