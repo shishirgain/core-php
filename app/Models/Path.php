@@ -1,5 +1,5 @@
 <?php
-namespace Router;
+namespace App\Models;
 class Path
 {
     protected $path;
@@ -15,6 +15,6 @@ class Path
     }
     public function getView()
     {
-        return __DIR__ . $this->view;
+        return __DIR__ . '/../..' . $this->view;
     }
 }

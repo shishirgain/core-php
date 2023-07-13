@@ -1,9 +1,9 @@
 <?php
-use Router\Path;
+use App\Models\Path;
 
 $paths = [
-    new Path('/', '/../views/home.php'),
-    new Path('/about', '/../views/about.php'),
+    new Path('/', '/views/home.php'),
+    new Path('/about', '/views/about.php'),
 ];
 
 function route($url)
@@ -14,8 +14,9 @@ function route($url)
             return $path;
         }
     }
+    return new Path('*', '/views/Error404.php');
 }
 
-$url = "$_SERVER[REQUEST_URI]";
+$url = $_SERVER['REQUEST_URI'];
 
 include(route($url)->getView());
